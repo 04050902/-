@@ -1,0 +1,185 @@
+	
+/* 游標指圖片會放大圖片 */
+.bigimg {
+	overflow:hidden;
+}
+.bigimg img {
+	transform:scale(1,1);transition: all 0.3s ease-out;
+}
+.bigimg img:hover {
+	transform:scale(2,2);
+}
+.bigimg {
+	z-index:-1;
+}
+
+/*使Form裡的按鈕位於同一行 */
+.inlineform{	
+    display: inline;
+}
+
+.inlineBform{
+	display: inline-block;
+}
+
+/*表格統一樣式*/
+
+table { 
+	border-collapse: separate;
+	font-family: Futura, Arial, sans-serif;
+	border-radius: 15px;
+}
+
+th,td {
+	padding: .65em;
+}
+
+/*製作圓角 左上 右上 右下 左下*/ 
+th:first-child {
+	border-radius: 15px 0 0 15px;
+}
+
+th:last-child {
+	border-radius: 0 15px 15px 0;
+}
+
+tr:last-child td:first-child {
+	border-radius: 15px 0 0 15px;
+}
+
+tr:last-child td:last-child {
+	border-radius: 0 15px 15px 0;
+}
+
+/* 列首固定於上 */
+thead tr th {
+	position:sticky;
+	top:0; 
+	z-index:2;
+}
+
+/*商品展示表格顏色配置*/
+.SPtable th{
+	background: #CF9E9E none repeat scroll 0 0;
+	background-attachment : fixed;
+	color: #984B4B;
+}
+
+.SPtable tbody tr:nth-child(odd) {
+	background: #F2E6E6;
+}
+
+
+/*滑鼠指到列-背景顏色漸層並放大字體*/
+.SPtable tbody tr:hover { 
+	background: linear-gradient(#FFECEC,#D9B3B3);
+	font-size: 17px;
+}
+
+
+/*出庫單表格顏色配置*/
+.SOtable th {
+	background: #6387A6 none repeat scroll 0 0;
+	background-attachment : fixed;
+	color: #EAF8FE;
+}
+
+.SOtable tbody tr:nth-child(odd) {
+	background: #EAF8FE;
+}
+
+/*修改單表格顏色配置*/
+.Editable th {
+	background: #9AA58E none repeat scroll 0 0;
+	background-attachment : fixed;
+	color: #022E40;
+}
+
+.Editable tbody tr:nth-child(odd) {
+	background: #D9CDB8;
+}
+
+/*滑鼠指到列-背景顏色漸層*/
+.Editable tbody tr:hover { 
+	background: linear-gradient(#DBD1C8,#C7B094);
+}
+
+/*新增商品單表格顏色配置*/
+.SItable th {
+	background: #A6907C none repeat scroll 0 0;
+	background-attachment : fixed;
+	color: #F2E1C2;
+}
+
+.SItable tbody tr:nth-child(odd) {
+	background: #F2E1C2;
+}
+
+/*滑鼠指到列-背景顏色漸層*/
+.SItable tbody tr:hover { 
+	background: linear-gradient(#D9AC84,#F2E1C2);
+}
+
+
+/*按鈕統一樣式*/
+.btn{
+	border-radius: 15px;
+    border: none;
+	padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+	font-size: 15px;
+}
+
+/*商品展示按鈕顏色配置*/
+#SPbtn1{
+	background-color: #804040;
+    color: white;
+}
+#SPbtn1:hover ,#SPbtn2:hover {
+    background-color: #FFEEDD; 
+    color: #D94600;
+	font-weight:bold;
+	border: 2px solid #842B00;
+}
+#SPbtn2{
+	background-color: #8d5757;
+    color: white;
+}
+
+/*出庫單按鈕顏色配置*/
+#SObtn{
+	background-color: #F2F2F0;
+    color: #6387A6;
+
+}
+#SObtn:hover {
+    background-color: #35648C; 
+    color: #F2F2F0;
+	font-weight:bold;
+	border: 2px solid #385773;
+}
+
+/*修改單按鈕顏色配置*/
+#Edibtn{
+	background-color: #DFDECD;
+    color: #6D8C8C;
+}
+#Edibtn:hover {
+    background-color: #BFB38F; 
+    color: #E8E4DB;
+	font-weight:bold;
+	border: 2px solid #737155;
+}
+
+/*入庫單按鈕顏色配置*/
+#SIbtn{
+	background-color: #D9AC84;
+    color: #736055;
+}
+#SIbtn:hover {
+    background-color: #736055; 
+    color: #D9AC84;
+	font-weight:bold;
+	border: 2px solid #212621;
+}
